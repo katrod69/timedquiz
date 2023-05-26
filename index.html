@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -11,15 +7,51 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    
+    <!-- buttons -->
+    <div class="startBtn"><button>Start Quiz</button></div>
+    <div class="quitBtn"><button>Exit Quiz</button></div>
+    <div class="restartBtn"><button>Replay</button></div>
+    
 
-    <script src="assets/timedquiz.js" async defer></script>
+    <div class="quizBox">
+      <header>
+        <div class="title">Coding Quiz</div>
+        <div class="timer">
+        <div class="timerText">Time Left</div>
+        <div class="timerSec">15</div>
+        </div>
+        <div class="timeLine"></div>
+      </header>
+      <section>
+        <div class="que_text">
+        </div>
+        <div class="optionList"> </div>
+          <div class="option">
+
+      <footer>
+        <div class="totalQue">
+          
+        </div>
+        <button class="nextBtn">Next Question</button>
+      </footer>
+    </div>
+    <!-- result box -->
+    <div class="resultBox">
+      <div class="icon"> 
+        <i class="fas fa-crown"></i>
+    </div> </div>
+<div class= completeText>Finished!</div>
+    <div class="score_text">
+     
+  </div>
+    <script src="assets/questions.js"></script>
+    <script src="assets/timedquiz.js" ></script>
   </body>
 </html>
